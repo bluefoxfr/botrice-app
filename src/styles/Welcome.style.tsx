@@ -1,6 +1,7 @@
+import styled from 'styled-components';
 import { DARKBLUE, GREY } from '@/components/Styles/Colors';
 import { H2 } from '@/components/Styles/Text';
-import styled from 'styled-components';
+import { Button } from '@/components/Button';
 
 
 export const WelcomeContainer = styled.div`
@@ -24,4 +25,8 @@ export const Icon = styled.img``;
 
 export const VersionTitle = styled(H2)`
   color: ${GREY};
+`;
+
+export const GoButton = styled(Button)`
+  width: 100%;
 `;
