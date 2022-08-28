@@ -1,4 +1,5 @@
 import React, { FunctionComponent } from 'react';
+import { useNavigate } from 'react-router-dom';
 import {
   WelcomeContainer,
   Icon,
@@ -9,12 +10,16 @@ import {
 import packageJson from './../../package.json';
 
 const Welcome: FunctionComponent = () => {
+  const router = useNavigate();
+  const goTutorial = () => {
+    router('config');
+  };
   return (
     <WelcomeContainer>
       <Content>
         <Icon src="/BobIcon.svg" alt="BobIcon" />
         <VersionTitle>{`Version ${packageJson.version}`}</VersionTitle>
-        <GoButton>{`Go`}</GoButton>
+        <GoButton onClick={() => goTutorial()}>{`Go`}</GoButton>
       </Content>
     </WelcomeContainer>
   );

@@ -10,6 +10,7 @@ import {
 type ButtonProps = {
   icon?: string | undefined;
   children: string;
+  onClick?: () => void;
 };
 
 export const Button: FunctionComponent<ButtonProps> = ({

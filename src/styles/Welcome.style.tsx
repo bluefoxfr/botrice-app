@@ -3,7 +3,6 @@ import { DARKBLUE, GREY } from '@/components/Styles/Colors';
 import { H2 } from '@/components/Styles/Text';
 import { Button } from '@/components/Button';
 
-
 export const WelcomeContainer = styled.div`
   display: flex;
   align-items: center;
