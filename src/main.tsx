@@ -10,8 +10,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Welcome />} />
-        <Route path="config" element={<FirstComing />} />
-        <Route path="markdown" element={<Markdown />} />
+        <Route path="/config" element={<FirstComing />} />
+        <Route path="/markdown" element={<Markdown />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
