@@ -9,8 +9,13 @@ import {
   BotContent,
 } from '@/styles/FirstComing.style';
 import React, { FunctionComponent } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const FirstComing: FunctionComponent = () => {
+  const router = useNavigate();
+  const goMarkdown = () => {
+    router('/markdown');
+  };
   return (
     <TutorialContainer>
       <Content>
@@ -24,7 +29,10 @@ const FirstComing: FunctionComponent = () => {
           </DescriptionContent>
         </TopContent>
         <BotContent>
-          <Button icon={'/ArrowIcon.svg'}>{`Go to tutorial`}</Button>
+          <Button
+            icon={'/ArrowIcon.svg'}
+            onClick={() => goMarkdown()}
+          >{`Go to tutorial`}</Button>
         </BotContent>
       </Content>
     </TutorialContainer>

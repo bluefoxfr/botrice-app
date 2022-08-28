@@ -16,6 +16,7 @@ export const Content = styled.div`
   flex-direction: column;
   width: 737px;
   height: 432px;
+  margin: 0 10px;
 `;
 
 export const TopContent = styled.div`
