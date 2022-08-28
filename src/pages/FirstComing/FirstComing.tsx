@@ -10,7 +10,7 @@ import {
 } from '@/styles/FirstComing.style';
 import React, { FunctionComponent } from 'react';
 
-export const FirstComing: FunctionComponent = () => {
+const FirstComing: FunctionComponent = () => {
   return (
     <TutorialContainer>
       <Content>
@@ -30,3 +30,5 @@ export const FirstComing: FunctionComponent = () => {
     </TutorialContainer>
   );
 };
+
+export default FirstComing;
