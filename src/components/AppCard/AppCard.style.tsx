@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { LIGHTBLUE, GREY, LIGHTBLUE50 } from '../Styles/Colors';
+import { LIGHTBLUE, GREY, LIGHTBLUE50, DARKBLUE } from '../Styles/Colors';
 import { H2, H4 } from '../Styles/Text';
 
 export const CardContainer = styled.div`
@@ -7,7 +7,7 @@ export const CardContainer = styled.div`
   flex-direction: column;
   padding: 30px 20px;
   border-radius: 10px;
-  background-color: ${LIGHTBLUE};
+  background-color: ${DARKBLUE};
   transition: 0.2s;
   &:hover {
     transition: 0.2s;
