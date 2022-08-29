@@ -14,12 +14,22 @@ export const MarkdownContainer = styled.div`
 `;
 
 export const Title = styled(H1)`
-  margin: 20px 0;
+  margin: 0 20px;
+`;
+
+export const MarkdownContent = styled.div`
+  display: flex;
+  margin: 20px;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  justify-content: center;
 `;
 
 export const Editor = styled(MDEditor)`
-  max-width: 700px;
-  min-width: 250px;
-  border-radius: 10px;
-  margin: 20px 0;
+  flex: 1;
+`;
+
+export const PreviewEditor = styled(MDEditor)`
+  padding: 20px;
+  overflow: auto;
 `;

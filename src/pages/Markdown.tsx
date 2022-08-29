@@ -1,5 +1,11 @@
 import React, { FunctionComponent, useState } from 'react';
-import { Editor, MarkdownContainer, Title } from '@/styles/Markdown.style';
+import {
+  Editor,
+  MarkdownContainer,
+  Title,
+  PreviewEditor,
+  MarkdownContent,
+} from '@/styles/Markdown.style';
 import { Button } from '@/components/Button';
 
 const Markdown: FunctionComponent = () => {
@@ -7,16 +13,28 @@ const Markdown: FunctionComponent = () => {
   return (
     <MarkdownContainer>
       <Title>Botrice Markdown Editor</Title>
-      <Editor
-        height={500}
-        value={value}
-        onChange={(value = '') => {
-          setValue(value);
-        }}
-        hideToolbar={true}
-        visibleDragbar={false}
-        preview={'edit'}
-      />
+      <MarkdownContent>
+        <Editor
+          height={500}
+          value={value}
+          onChange={(value = '') => {
+            setValue(value);
+          }}
+          hideToolbar={true}
+          visibleDragbar={false}
+          preview={'edit'}
+        />
+        <PreviewEditor.Markdown
+          source={value}
+          style={{
+            whiteSpace: 'pre-wrap',
+            padding: '20px',
+            maxHeight: '480px',
+            overflow: 'auto',
+            flex: '1',
+          }}
+        />
+      </MarkdownContent>
       <Button
         onClick={() => {
           navigator.clipboard.writeText(value);
