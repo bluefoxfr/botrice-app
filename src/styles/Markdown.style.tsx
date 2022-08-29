@@ -1,6 +1,7 @@
 import { DARKBLUE } from '@/components/Styles/Colors';
 import styled from 'styled-components';
 import MDEditor from '@uiw/react-md-editor';
+import { H1 } from '@/components/Styles/Text';
 
 export const MarkdownContainer = styled.div`
   display: flex;
@@ -12,8 +13,13 @@ export const MarkdownContainer = styled.div`
   align-items: center;
 `;
 
+export const Title = styled(H1)`
+  margin: 20px 0;
+`;
+
 export const Editor = styled(MDEditor)`
-  width: 1000px;
+  max-width: 700px;
+  min-width: 250px;
   border-radius: 10px;
   margin: 20px 0;
 `;

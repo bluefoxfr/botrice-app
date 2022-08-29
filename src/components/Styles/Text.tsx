@@ -22,6 +22,9 @@ export const H1 = styled.h1`
   font-style: normal;
   font-weight: 700;
   color: ${PUREWHITE};
+  @media (max-width: 350px) {
+    font-size: 24px;
+  }
 `;
 
 export const H2 = styled.h2`

@@ -1,13 +1,12 @@
 import React, { FunctionComponent, useState } from 'react';
-import { Editor, MarkdownContainer } from '@/styles/Markdown.style';
-import { H1 } from '@/components/Styles/Text';
+import { Editor, MarkdownContainer, Title } from '@/styles/Markdown.style';
 import { Button } from '@/components/Button';
 
 const Markdown: FunctionComponent = () => {
   const [value, setValue] = useState('# Welcome to Markdown Editor');
   return (
     <MarkdownContainer>
-      <H1>Botrice Markdown Editor</H1>
+      <Title>Botrice Markdown Editor</Title>
       <Editor
         height={500}
         value={value}
@@ -16,6 +15,7 @@ const Markdown: FunctionComponent = () => {
         }}
         hideToolbar={true}
         visibleDragbar={false}
+        preview={'edit'}
       />
       <Button
         onClick={() => {

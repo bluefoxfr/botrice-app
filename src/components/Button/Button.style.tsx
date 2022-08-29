@@ -14,6 +14,9 @@ export const ButtonContainer = styled.button`
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
+  @media (max-width: 350px) {
+    font-size: 12px;
+  }
   border: none;
   outline: none;
   &:hover {
@@ -64,5 +67,4 @@ export const IconElement = styled.div`
   padding: 0px;
 `;
 
-export const Icon = styled.img`
-`;
+export const Icon = styled.img``;
