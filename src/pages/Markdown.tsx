@@ -43,6 +43,8 @@ const Markdown: FunctionComponent = () => {
             maxHeight: '480px',
             overflow: 'auto',
             flex: '1',
+            border: '#fafafa75 1px solid',
+            borderRadius: '0 10px 10px 0',
           }}
         />
       </MarkdownContent>

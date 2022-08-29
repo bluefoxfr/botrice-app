@@ -1,4 +1,4 @@
-import { DARKBLUE } from '@/components/Styles/Colors';
+import { DARKBLUE, PUREWHITE } from '@/components/Styles/Colors';
 import styled from 'styled-components';
 import MDEditor from '@uiw/react-md-editor';
 import { H1 } from '@/components/Styles/Text';
@@ -21,12 +21,13 @@ export const MarkdownContent = styled.div`
   display: flex;
   margin: 20px;
   flex-wrap: wrap;
-  border-radius: 10px;
   justify-content: center;
 `;
 
 export const Editor = styled(MDEditor)`
   flex: 1;
+  border: #fafafa75 1px solid;
+  border-radius: 10px 0 0 10px;
 `;
 
 export const PreviewEditor = styled(MDEditor)`

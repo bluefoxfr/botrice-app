@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { LIGHTBLUE, GREY, LIGHTBLUE50, DARKBLUE } from '../Styles/Colors';
+import { DARKBLUE, GREY, LIGHTBLUE50 } from '../Styles/Colors';
 import { H2, H4 } from '../Styles/Text';
 
 export const CardContainer = styled.div`
