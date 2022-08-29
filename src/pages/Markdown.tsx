@@ -5,13 +5,24 @@ import {
   Title,
   PreviewEditor,
   MarkdownContent,
+  BackArrow,
 } from '@/styles/Markdown.style';
 import { Button } from '@/components/Button';
+import { useNavigate } from 'react-router-dom';
 
 const Markdown: FunctionComponent = () => {
   const [value, setValue] = useState('# Welcome to Markdown Editor');
+  const router = useNavigate();
+  const goBack = () => {
+    router('/app');
+  };
   return (
     <MarkdownContainer>
+      <BackArrow
+        src={'/backArrow.svg'}
+        alt={'backArrow'}
+        onClick={() => goBack()}
+      />
       <Title>Botrice Markdown Editor</Title>
       <MarkdownContent>
         <Editor

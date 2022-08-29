@@ -33,3 +33,12 @@ export const PreviewEditor = styled(MDEditor)`
   padding: 20px;
   overflow: auto;
 `;
+
+export const BackArrow = styled.img`
+  width: 50px;
+  height: 70px;
+  display: flex;
+  align-self: flex-start;
+  margin: 0 10px;
+  cursor: pointer;
+`;

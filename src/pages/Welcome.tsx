@@ -12,7 +12,7 @@ import packageJson from './../../package.json';
 const Welcome: FunctionComponent = () => {
   const router = useNavigate();
   const goTutorial = () => {
-    router('config');
+    router('app');
   };
   return (
     <WelcomeContainer>
